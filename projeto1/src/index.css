@@ -15,6 +15,11 @@ body, html {
   flex-grow: 1;
   padding: 20px;
   background-color: #440909; 
+  color: white; 
+}
+
+h2, p {
+  color: white; 
 }
 
 .navbar {
