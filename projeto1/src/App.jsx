@@ -1,26 +1,25 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-const Home = () => <div><h2>Home</h2></div>;
-const Produtos = () => <div><h2>Produtos</h2></div>;
-const Sobre = () => <div><h2>Sobre</h2></div>;
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Produtos from './pages/Produtos';
+import Sobre from './pages/sobre';
+import Contato from './pages/Contato';
+import Error from './pages/Error';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <nav className="navbar">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/produtos">Produtos</Link></li>
-            <li><Link to="/sobre">Sobre</Link></li>
-          </ul>
-        </nav>
-
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<Error />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
