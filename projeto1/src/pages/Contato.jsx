@@ -2,7 +2,8 @@ function Contato() {
     return (
       <div>
         <h2>Contato</h2>
-        <p>Entre em contato conosco pelo email: contato@esportes.com.</p>
+        <p>Entre em contato conosco através do seguinte e-mail:</p>
+        <p><strong>contato@esportes.com</strong></p>
       </div>
     );
   }

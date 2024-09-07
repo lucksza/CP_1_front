@@ -14,6 +14,7 @@ body, html {
 .content {
   flex-grow: 1;
   padding: 20px;
+  background-color: #440909; 
 }
 
 .navbar {
@@ -36,15 +37,15 @@ body, html {
 
 .navbar ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 18px;
-  transition: transform 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-  transform: scale(1.2); /* Aumenta o tamanho do link quando o mouse passa por cima */
-  color: #ff0000; /* Troca a cor ao passar o mouse */
+  transform: scale(1.2);
+  color: #970000;
 }
 
 footer {
@@ -55,4 +56,22 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sobre-container img {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.sobre-container p {
+  color: white;
+  max-width: 600px;
 }
